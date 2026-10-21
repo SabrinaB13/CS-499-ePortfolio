@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="8dp"
+    android:paddingHorizontal="8dp">
+
+    <!-- Date can edit -->
+    <EditText
+        android:id="@+id/editRowDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="MM/DD/YYYY"
+        android:inputType="text"
+        android:textSize="14sp"
+        android:background="@android:color/transparent" />
+
+    <!-- Weight can edit -->
+    <EditText
+        android:id="@+id/editRowWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Weight"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        android:background="@android:color/transparent" />
+
+    <!-- Lbs to Goal  -->
+    <TextView
+        android:id="@+id/textRowToGoal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="-"
+        android:textSize="14sp" />
+
+    <!-- Update button -->
+    <Button
+        android:id="@+id/buttonRowUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+    <!-- Delete button -->
+    <Button
+        android:id="@+id/buttonRowDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X" />
+</LinearLayout>
