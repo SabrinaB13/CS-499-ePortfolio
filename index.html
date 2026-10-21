@@ -1,13 +1,250 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Sabrina Briggs | Computer Science ePortfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #161b22;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #30363d;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #c084fc;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #e6edf3;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #c084fc;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .code-text {
+            color: #c084fc;
+            font-family: monospace;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 1.8rem;
+            color: #8b949e;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #b1bac4;
+            font-size: 1.1rem;
+        }
+
+        /* Buttons */
+        .buttons {
+            margin-top: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 8px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .primary {
+            background-color: #8957e5;
+            color: white;
+        }
+
+        .secondary {
+            border: 1px solid #8957e5;
+            color: #c084fc;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Skills */
+        .skills {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #161b22;
+        }
+
+        .skills h2 {
+            margin-bottom: 25px;
+        }
+
+        .skill-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-family: monospace;
+            color: #c084fc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #8b949e;
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 2.7rem;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Sabrina Briggs</h1>
-    <h2>Computer Science ePortfolio</h2>
+    <nav>
+        <div class="logo">&lt;SB /&gt;</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#assessment">Self-Assessment</a></li>
+            <li><a href="#artifacts">Artifacts</a></li>
+            <li><a href="#review">Code Review</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="code-text">&lt;hello world&gt;</p>
+
+            <h1>Sabrina Briggs</h1>
+
+            <h2>Computer Science ePortfolio</h2>
+
+            <p>
+                Welcome to my Computer Science ePortfolio. This portfolio
+                represents my growth throughout the Computer Science program
+                and highlights my experience in software engineering,
+                algorithms and data structures, database development,
+                security, and user-centered design.
+            </p>
+
+            <div class="buttons">
+                <a href="#artifacts" class="button primary">
+                    View My Work
+                </a>
+
+                <a href="#assessment" class="button secondary">
+                    Professional Self-Assessment
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skill-list">
+            <span class="skill">Java</span>
+            <span class="skill">Python</span>
+            <span class="skill">C++</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">HTML/CSS</span>
+            <span class="skill">SQL</span>
+            <span class="skill">SQLite</span>
+            <span class="skill">React</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">MongoDB</span>
+            <span class="skill">Git/GitHub</span>
+            <span class="skill">Android Studio</span>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Designed and developed by Sabrina Briggs | CS 499 ePortfolio</p>
+    </footer>
 
 </body>
 </html>
