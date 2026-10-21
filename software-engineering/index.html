@@ -133,6 +133,31 @@
             font-size: 0.9rem;
         }
 
+        .artifact-files {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .file-group {
+            background: #090d14;
+            border: 1px solid #343d48;
+            border-radius: 8px;
+            padding: 25px;
+        }    
+
+        .file-group h3 {
+            color: #c15cff;
+            margin-bottom: 18px;
+        }
+
+        .file-group .file-button {
+            display: block;
+            margin-bottom: 10px;
+            word-break: break-word;
+        }
+
         /* FILE BUTTONS */
 
         .file-buttons {
@@ -187,6 +212,10 @@
 
             .content-card {
                 padding: 25px;
+            }
+
+            .artifact-files {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -287,6 +316,53 @@
                 View the original and enhanced source files to see how
                 the application evolved during the enhancement process.
             </p>
+
+            <div class="artifact-files">
+
+        <div class="file-group">
+
+            <h3>Original Files</h3>
+
+            <a href="original/activity_logged_weights(Original).xml"
+           class="file-button">
+            activity_logged_weights.xml
+            </a>
+
+            <a href="original/LoggedWeightsActivity(Original).java"
+           class="file-button">
+            LoggedWeightsActivity.java
+            </a>
+
+        </div>
+
+
+        <div class="file-group">
+
+            <h3>Enhanced Files</h3>
+
+            <a href="enhanced/activity_logged_weights(Enhanced).xml"
+               class="file-button">
+                activity_logged_weights.xml
+            </a>
+
+            <a href="enhanced/circular_progress(Enhanced).xml"
+               class="file-button">
+                circular_progress.xml
+            </a>
+
+            <a href="enhanced/LoggedWeightsActivity(Enhanced).java"
+               class="file-button">
+                LoggedWeightsActivity.java
+            </a>
+
+            <a href="enhanced/WeightProgressCalculator(Enhanced).java"
+               class="file-button">
+                WeightProgressCalculator.java
+            </a>
+
+        </div>
+
+</div>
 
         </div>
 
