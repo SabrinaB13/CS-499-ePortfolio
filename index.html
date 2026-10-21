@@ -19,158 +19,398 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #0d1117;
-            color: #e6edf3;
+            background: #090d14;
+            color: #ffffff;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
-        /* Navigation */
+        /* =========================
+           NAVIGATION
+        ========================== */
+
         nav {
-            background-color: #161b22;
-            padding: 18px 8%;
+            height: 80px;
+            padding: 0 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            background: rgba(9, 13, 20, 0.95);
+            border-bottom: 1px solid #30363d;
+
             position: sticky;
             top: 0;
-            border-bottom: 1px solid #30363d;
+            z-index: 1000;
         }
 
         .logo {
-            font-size: 1.3rem;
+            font-family: monospace;
+            font-size: 1.6rem;
             font-weight: bold;
-            color: #c084fc;
+            color: #c15cff;
         }
 
         nav ul {
-            list-style: none;
             display: flex;
-            gap: 25px;
+            list-style: none;
+            gap: 35px;
         }
 
         nav a {
-            color: #e6edf3;
+            color: #ffffff;
             text-decoration: none;
+            font-size: 1.05rem;
+            transition: 0.3s;
         }
 
         nav a:hover {
-            color: #c084fc;
+            color: #c15cff;
         }
 
-        /* Hero Section */
+        /* =========================
+           HERO
+        ========================== */
+
         .hero {
-            min-height: 85vh;
+            min-height: calc(100vh - 80px);
+            position: relative;
+
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            padding: 40px 20px;
+
+            padding: 80px 20px;
+
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(93, 36, 135, 0.25),
+                    rgba(9, 13, 20, 0.96) 65%
+                ),
+                #090d14;
         }
+
+        /* =========================
+           BACKGROUND CODE
+        ========================== */
+
+        .code-background {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+
+            font-family: "Courier New", monospace;
+            pointer-events: none;
+        }
+
+        .code {
+            position: absolute;
+
+            color: rgba(168, 105, 255, 0.18);
+
+            font-size: 1.1rem;
+            line-height: 1.8;
+
+            white-space: pre;
+
+            filter: blur(0.2px);
+        }
+
+        .code-left {
+            left: 4%;
+            top: 10%;
+            transform: rotate(-2deg);
+        }
+
+        .code-right {
+            right: 2%;
+            top: 9%;
+            transform: rotate(2deg);
+        }
+
+        .code-bottom {
+            left: 10%;
+            bottom: 2%;
+            color: rgba(73, 164, 255, 0.12);
+        }
+
+        /* Different code colors */
+
+        .pink {
+            color: rgba(255, 75, 190, 0.35);
+        }
+
+        .blue {
+            color: rgba(76, 169, 255, 0.35);
+        }
+
+        .purple {
+            color: rgba(190, 92, 255, 0.40);
+        }
+
+        /* =========================
+           BUGS
+        ========================== */
+
+        .bug {
+            position: absolute;
+            z-index: 1;
+
+            font-size: 3rem;
+
+            opacity: 0.35;
+
+            filter: drop-shadow(0 0 12px #bd4cff);
+
+            animation: float 5s ease-in-out infinite;
+
+            pointer-events: none;
+        }
+
+        .bug1 {
+            top: 12%;
+            left: 12%;
+        }
+
+        .bug2 {
+            top: 17%;
+            right: 14%;
+            animation-delay: 1s;
+        }
+
+        .bug3 {
+            bottom: 15%;
+            left: 15%;
+            animation-delay: 2s;
+        }
+
+        .bug4 {
+            bottom: 9%;
+            right: 10%;
+            animation-delay: 3s;
+        }
+
+        .bug5 {
+            top: 52%;
+            left: 5%;
+            font-size: 2rem;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* =========================
+           HERO CONTENT
+        ========================== */
 
         .hero-content {
-            max-width: 850px;
+            position: relative;
+            z-index: 10;
+
+            max-width: 900px;
+            width: 100%;
+
+            padding: 55px 45px;
+
+            text-align: center;
+
+            background: rgba(9, 13, 20, 0.72);
+
+            border: 1px solid rgba(192, 92, 255, 0.18);
+
+            border-radius: 20px;
+
+            backdrop-filter: blur(7px);
+
+            box-shadow:
+                0 0 60px rgba(117, 39, 180, 0.15);
         }
 
-        .code-text {
-            color: #c084fc;
-            font-family: monospace;
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            font-size: 4rem;
+        .hello {
+            color: #c15cff;
+            font-family: "Courier New", monospace;
+            font-size: 1.2rem;
             margin-bottom: 10px;
         }
 
+        h1 {
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
         .hero h2 {
-            font-size: 1.8rem;
-            color: #8b949e;
+            color: #bd65ff;
+
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+
             margin-bottom: 25px;
         }
 
-        .hero p {
-            max-width: 700px;
+        .intro {
+            max-width: 750px;
             margin: auto;
-            color: #b1bac4;
+
+            color: #d0d7de;
+
             font-size: 1.1rem;
         }
 
-        /* Buttons */
+        /* =========================
+           BUTTONS
+        ========================== */
+
         .buttons {
             margin-top: 35px;
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .button {
-            display: inline-block;
-            padding: 12px 24px;
-            margin: 8px;
-            border-radius: 6px;
+            padding: 14px 28px;
+
+            border-radius: 7px;
+
             text-decoration: none;
+
             font-weight: bold;
-            transition: 0.2s;
+
+            transition: 0.3s;
         }
 
         .primary {
-            background-color: #8957e5;
             color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7135e8,
+                    #b94cff
+                );
+
+            box-shadow:
+                0 0 20px rgba(177, 70, 255, 0.25);
         }
 
         .secondary {
-            border: 1px solid #8957e5;
-            color: #c084fc;
+            color: #cf72ff;
+
+            border: 1px solid #a84cff;
+
+            background: rgba(20, 13, 28, 0.6);
         }
 
         .button:hover {
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 0 25px rgba(191, 77, 255, 0.45);
         }
 
-        /* Skills */
+        /* =========================
+           SKILLS
+        ========================== */
+
         .skills {
-            padding: 50px 20px;
+            padding: 65px 20px;
+
             text-align: center;
-            background-color: #161b22;
+
+            background: #111720;
         }
 
         .skills h2 {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
+            font-size: 2rem;
         }
 
         .skill-list {
             display: flex;
+
             justify-content: center;
+
             flex-wrap: wrap;
+
             gap: 12px;
+
+            max-width: 900px;
+
+            margin: auto;
         }
 
         .skill {
-            background-color: #21262d;
-            border: 1px solid #30363d;
-            padding: 8px 15px;
+            background: #1b222c;
+
+            border: 1px solid #343d48;
+
+            color: #c971ff;
+
+            padding: 8px 16px;
+
             border-radius: 20px;
+
             font-family: monospace;
-            color: #c084fc;
         }
 
         footer {
+            background: #090d14;
+
+            color: #7d8590;
+
             text-align: center;
+
             padding: 30px;
-            color: #8b949e;
         }
 
+        /* =========================
+           MOBILE
+        ========================== */
+
         @media (max-width: 700px) {
-            h1 {
-                font-size: 2.7rem;
-            }
 
             nav {
+                height: auto;
+
+                padding: 15px 20px;
+
                 flex-direction: column;
-                gap: 15px;
+
+                gap: 12px;
             }
 
             nav ul {
-                gap: 12px;
-                flex-wrap: wrap;
+                gap: 15px;
+
                 justify-content: center;
+
+                flex-wrap: wrap;
+            }
+
+            .hero-content {
+                padding: 40px 20px;
+            }
+
+            .code {
+                font-size: 0.8rem;
+            }
+
+            .bug {
+                font-size: 2rem;
             }
         }
     </style>
@@ -178,72 +418,212 @@
 
 <body>
 
+    <!-- Navigation -->
+
     <nav>
-        <div class="logo">&lt;SB /&gt;</div>
+
+        <div class="logo">
+            &lt;SB /&gt;
+        </div>
 
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#assessment">Self-Assessment</a></li>
-            <li><a href="#artifacts">Artifacts</a></li>
-            <li><a href="#review">Code Review</a></li>
+
+            <li>
+                <a href="#assessment">
+                    Self-Assessment
+                </a>
+            </li>
+
+            <li>
+                <a href="#artifacts">
+                    Artifacts
+                </a>
+            </li>
+
+            <li>
+                <a href="#review">
+                    Code Review
+                </a>
+            </li>
         </ul>
+
     </nav>
+
+
+    <!-- Hero -->
 
     <section class="hero" id="home">
 
+
+        <!-- Decorative Coding Background -->
+
+        <div class="code-background">
+
+            <div class="code code-left">
+<span class="purple">function fixBug()</span> {
+    <span class="pink">try</span> {
+        makeItWork();
+    }
+    <span class="pink">catch</span> (error) {
+        console.log("Debugging...");
+    }
+}
+
+<span class="blue">const</span> motivation = [
+    "Coffee",
+    "Creativity",
+    "A Better Future"
+];
+            </div>
+
+
+            <div class="code code-right">
+// Found a bug...
+
+<span class="pink">if</span> (bug) {
+    fixBug();
+    console.log("Problem solved");
+}
+<span class="pink">else</span> {
+    console.log("Keep building");
+}
+
+<span class="purple">while</span> (learning) {
+    grow();
+    build();
+    improve();
+}
+
+// Goals:
+
+[✓] Graduate
+[ ] Build my career
+[ ] Keep learning
+[ ] Keep going
+            </div>
+
+
+            <div class="code code-bottom">
+class ComputerScienceStudent {
+
+    constructor() {
+        this.skills = [];
+        this.curiosity = true;
+    }
+
+    learn(skill) {
+        this.skills.push(skill);
+    }
+}
+            </div>
+
+        </div>
+
+
+        <!-- Floating Bugs -->
+
+        <div class="bug bug1">🐞</div>
+        <div class="bug bug2">🐞</div>
+        <div class="bug bug3">🐞</div>
+        <div class="bug bug4">🐞</div>
+        <div class="bug bug5">🐞</div>
+
+
+        <!-- Main Content -->
+
         <div class="hero-content">
 
-            <p class="code-text">&lt;hello world&gt;</p>
+            <p class="hello">
+                &lt;hello world&gt;
+            </p>
 
-            <h1>Sabrina Briggs</h1>
+            <h1>
+                Sabrina Briggs
+            </h1>
 
-            <h2>Computer Science ePortfolio</h2>
+            <h2>
+                Computer Science ePortfolio
+            </h2>
 
-            <p>
-                Welcome to my Computer Science ePortfolio. This portfolio
-                represents my growth throughout the Computer Science program
-                and highlights my experience in software engineering,
-                algorithms and data structures, database development,
+            <p class="intro">
+                Welcome to my Computer Science ePortfolio.
+                This portfolio represents my growth throughout
+                the Computer Science program and highlights my
+                experience in software engineering, algorithms
+                and data structures, database development,
                 security, and user-centered design.
             </p>
 
+
             <div class="buttons">
-                <a href="#artifacts" class="button primary">
-                    View My Work
+
+                <a
+                    href="#artifacts"
+                    class="button primary"
+                >
+                    &lt;/&gt; &nbsp; View My Work
                 </a>
 
-                <a href="#assessment" class="button secondary">
+
+                <a
+                    href="#assessment"
+                    class="button secondary"
+                >
                     Professional Self-Assessment
                 </a>
+
             </div>
 
         </div>
 
     </section>
 
+
+    <!-- Skills -->
+
     <section class="skills">
 
-        <h2>Technical Skills</h2>
+        <h2>
+            Technical Skills
+        </h2>
 
         <div class="skill-list">
+
             <span class="skill">Java</span>
+
             <span class="skill">Python</span>
+
             <span class="skill">C++</span>
+
             <span class="skill">JavaScript</span>
+
             <span class="skill">HTML/CSS</span>
+
             <span class="skill">SQL</span>
+
             <span class="skill">SQLite</span>
+
             <span class="skill">React</span>
+
             <span class="skill">Node.js</span>
+
             <span class="skill">MongoDB</span>
+
             <span class="skill">Git/GitHub</span>
+
             <span class="skill">Android Studio</span>
+
         </div>
 
     </section>
 
+
     <footer>
-        <p>Designed and developed by Sabrina Briggs | CS 499 ePortfolio</p>
+
+        Designed and developed by Sabrina Briggs
+        | CS 499 ePortfolio
+
     </footer>
 
 </body>
