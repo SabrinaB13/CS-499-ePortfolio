@@ -95,123 +95,7 @@
             background-repeat: no-repeat;
         }
 
-        /* =========================
-           BACKGROUND CODE
-        ========================== */
-
-        .code-background {
-            position: absolute;
-            inset: 0;
-            z-index: 0;
-            overflow: hidden;
-
-            font-family: "Courier New", monospace;
-            pointer-events: none;
-        }
-
-        .code {
-            position: absolute;
-
-            color: rgba(168, 105, 255, 0.18);
-
-            font-size: 1.1rem;
-            line-height: 1.8;
-
-            white-space: pre;
-
-            filter: blur(0.2px);
-        }
-
-        .code-left {
-            left: 4%;
-            top: 10%;
-            transform: rotate(-2deg);
-        }
-
-        .code-right {
-            right: 2%;
-            top: 9%;
-            transform: rotate(2deg);
-        }
-
-        .code-bottom {
-            left: 10%;
-            bottom: 2%;
-            color: rgba(73, 164, 255, 0.12);
-        }
-
-        /* Different code colors */
-
-        .pink {
-            color: rgba(255, 75, 190, 0.35);
-        }
-
-        .blue {
-            color: rgba(76, 169, 255, 0.35);
-        }
-
-        .purple {
-            color: rgba(190, 92, 255, 0.40);
-        }
-
-        /* =========================
-           BUGS
-        ========================== */
-
-        .bug {
-            position: absolute;
-            z-index: 1;
-
-            font-size: 3rem;
-
-            opacity: 0.35;
-
-            filter: drop-shadow(0 0 12px #bd4cff);
-
-            animation: float 5s ease-in-out infinite;
-
-            pointer-events: none;
-        }
-
-        .bug1 {
-            top: 12%;
-            left: 12%;
-        }
-
-        .bug2 {
-            top: 17%;
-            right: 14%;
-            animation-delay: 1s;
-        }
-
-        .bug3 {
-            bottom: 15%;
-            left: 15%;
-            animation-delay: 2s;
-        }
-
-        .bug4 {
-            bottom: 9%;
-            right: 10%;
-            animation-delay: 3s;
-        }
-
-        .bug5 {
-            top: 52%;
-            left: 5%;
-            font-size: 2rem;
-            animation-delay: 1.5s;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-15px);
-            }
-        }
+       
 
         /* =========================
            HERO CONTENT
@@ -521,16 +405,6 @@ class ComputerScienceStudent {
             </div>
 
         </div>
-
-
-        <!-- Floating Bugs -->
-
-        <div class="bug bug1">🐞</div>
-        <div class="bug bug2">🐞</div>
-        <div class="bug bug3">🐞</div>
-        <div class="bug bug4">🐞</div>
-        <div class="bug bug5">🐞</div>
-
 
         <!-- Main Content -->
 
