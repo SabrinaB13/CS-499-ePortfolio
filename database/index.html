@@ -380,6 +380,95 @@
 
         </div>
 
+        <div class="content-card" id="narrative">
+
+    <h2>Milestone 4 Narrative</h2>
+
+    <p>
+        The artifact I selected is my Watch The Weight Fall Off Android
+        application, which I originally created in my CS 360: Mobile
+        Architecture and Programming course. The application allows users
+        to create an account, log their daily weight, set a goal weight,
+        and track their progress. I chose to continue enhancing this same
+        artifact because it includes several different areas of computer
+        science and gives me the opportunity to show how much I have
+        improved since originally creating it.
+    </p>
+
+    <p>
+        I selected this artifact because it shows my ability to work with
+        mobile application development, Java, user interfaces, and
+        databases. For this specific enhancement, I wanted to focus on
+        improving the application's SQLite database.
+    </p>
+
+    <p>
+        The application already used SQLite, but I expanded the database
+        by adding a new milestones table and adding a starting weight to
+        the user data as well. I also created methods to save and retrieve
+        the user's starting weight and weight-loss milestones. The
+        application now uses the stored starting weight to calculate
+        progress toward the user's goal and recognizes weight-loss
+        milestones in five-pound increments.
+    </p>
+
+    <p>
+        When a new milestone is reached, it is also saved to the database
+        so that the same milestone is not repeatedly recorded. I even
+        added a custom purple milestone popup to notify the user when they
+        reach one. I feel that these improvements demonstrate my ability
+        to organize, store, retrieve, and use data within an application
+        instead of only displaying information on the screen.
+    </p>
+
+    <p>
+        I feel that I met the course outcomes I planned for this
+        enhancement. I improved the database structure and used
+        appropriate techniques to store and retrieve data while also
+        keeping the database connected to the rest of the application.
+        I also used foreign-key relationships to better organize
+        user-specific data and help maintain data integrity.
+    </p>
+
+    <p>
+        This specific enhancement also connected with some of my other
+        course outcomes as well. The database information is used by the
+        application's calculations and the user interface. I do not feel
+        that I need to make any major changes to my original
+        outcome-coverage plan because my three enhancements together
+        demonstrate software design and engineering, algorithms and data
+        structures, and databases.
+    </p>
+
+    <p>
+        During this module and enhancement, I learned a lot about how
+        database design can affect the rest of an application. One
+        challenge I faced during this enhancement was figuring out the
+        best way to determine the user's starting weight. At first, I was
+        trying to use the logged weight entries, and I quickly realized
+        that a starting weight should be stored separately because the
+        application only allowed one daily weight entry per day.
+    </p>
+
+    <p>
+        I added the starting weight to the user's database information
+        instead to help make the progress and milestone calculations more
+        reliable. I also had to test how the milestone information was
+        saved so the same milestone would not keep appearing.
+    </p>
+
+    <p>
+        Another challenge that I faced was making sure the database
+        changes worked correctly with the existing features without
+        breaking the application. I feel like this enhancement helped me
+        better understand the connection between database structure,
+        application logic, and the user interface. I feel that it also
+        reminded me once again how important it is to test changes as I
+        make them instead of making several changes at once.
+    </p>
+
+</div>
+
 
         <p class="tag closing-tag">
             &lt;/project-03&gt;
