@@ -267,7 +267,7 @@
         }
 
         /* =========================
-         PROFESSIONAL SELF-ASSESSMENT
+         PROFESSIONAL GROWTH
         ========================== */
 
         .assessment {
@@ -329,6 +329,93 @@
         }
 
         /* =========================
+          FEATURED PROJECTS
+        ========================== */
+
+        .projects {
+            padding: 100px 20px;
+            
+            background: #111720;
+        }
+    
+        .projects h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            
+            margin-bottom: 15px;
+        }
+
+        .projects-intro {
+            color: #aeb6c0;
+            
+            max-width: 750px;
+            
+            margin-bottom: 45px;
+            
+            font-size: 1.05rem;
+        }
+
+        .project-grid {
+            display: grid;
+            
+            grid-template-columns: repeat(3, 1fr);
+            
+            gap: 25px;
+        }
+
+        .project-card {
+            position: relative;
+
+            background: #090d14;
+
+            border: 1px solid #343d48;
+            
+            border-radius: 12px;
+
+            padding: 35px 30px;
+
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+    
+            border-color: #b94cff;
+
+            box-shadow:
+                0 10px 35px rgba(177, 70, 255, 0.15);
+        }
+
+        .project-number {
+            color: #c15cff;
+
+            font-size: 1rem;
+            
+            font-weight: bold;
+
+            margin-bottom: 25px;
+        }
+
+        .project-card h3 {
+            font-size: 1.35rem;
+
+            margin-bottom: 18px;
+
+            color: #ffffff;
+        }
+
+        .project-card p {
+            color: #aeb6c0;
+
+            margin-bottom: 25px;
+        }
+
+        .project-language {
+            color: #c971ff;
+
+            font-size: 0.9rem;
+        }
+
+        /* =========================
            MOBILE
         ========================== */
 
@@ -363,6 +450,10 @@
             .bug {
                 font-size: 2rem;
             }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -382,13 +473,13 @@
 
             <li>
                 <a href="#assessment">
-                    Self-Assessment
+                    About Me
                 </a>
             </li>
 
             <li>
                 <a href="#artifacts">
-                    Artifacts
+                    Featured Projects
                 </a>
             </li>
 
@@ -446,7 +537,7 @@
                     href="#assessment"
                     class="button secondary"
                 >
-                    Professional Self-Assessment
+                    Professional Growth
                 </a>
 
             </div>
@@ -505,7 +596,8 @@
             </p>
 
             <h2>
-                Professional Self-Assessment
+                Professional Growth
+                
             </h2>
 
             <div class="assessment-card">
@@ -539,6 +631,113 @@
 
             <p class="section-tag closing-tag">
                 &lt;/professional-self-assessment&gt;
+            </p>
+
+        </div>
+
+    </section>
+
+        <!-- Featured Projects -->
+
+    <section class="projects" id="artifacts">
+
+        <div class="section-container">
+
+            <p class="section-tag">
+                &lt;featured-projects&gt;
+            </p>
+
+            <h2>
+                Featured Projects
+            </h2>
+
+            <p class="projects-intro">
+                Explore the enhancements I completed throughout my
+                Computer Science capstone. Each project demonstrates
+                my growth in a different area of computer science!
+            </p>
+
+
+            <div class="project-grid">
+
+                <!-- Software Engineering -->
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Software Engineering & Design
+                    </h3>
+
+                    <p>
+                        Improving the design, functionality, and user
+                        experience of my Watch The Weight Fall Off
+                        Android application.
+                    </p>
+
+                    <span class="project-language">
+                        Java • Android Studio
+                    </span>
+
+                </div>
+
+
+                <!-- Algorithms -->
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Algorithms & Data Structures
+                    </h3>
+
+                    <p>
+                        Enhancing the application with sorting, weight
+                        trend analysis, and goal progress calculations.
+                    </p>
+
+                    <span class="project-language">
+                        Java • Algorithms
+                    </span>
+
+                </div>
+
+
+                <!-- Database -->
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Database Development
+                    </h3>
+
+                    <p>
+                        Expanding the application's SQLite database to
+                        support weight tracking, goals, and milestone
+                        functionality.
+                    </p>
+
+                    <span class="project-language">
+                        SQLite • Database Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p class="section-tag closing-tag">
+                &lt;/featured-projects&gt;
             </p>
 
         </div>
