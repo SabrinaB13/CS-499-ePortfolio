@@ -1,1 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Algorithms & Data Structures | Sabrina Briggs</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background: #090d14;
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        #narrative p {
+            margin-bottom: 20px;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            min-height: 80px;
+            padding: 0 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(9, 13, 20, 0.97);
+            border-bottom: 1px solid #30363d;
+        }
+
+        .logo {
+            color: #c15cff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #d0d7de;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #c15cff;
+        }
+
+        /* PAGE */
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 90px 25px;
+        }
+
+        .tag {
+            color: #c15cff;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            line-height: 1.15;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #bd65ff;
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+
+        .intro {
+            color: #c9d1d9;
+            max-width: 800px;
+            font-size: 1.05rem;
+            margin-bottom: 55px;
+        }
+
+        /* CONTENT CARDS */
+
+        .content-card {
+            background: #111720;
+            border: 1px solid #343d48;
+            border-left: 4px solid #b94cff;
+            border-radius: 10px;
+            padding: 35px;
+            margin-bottom: 30px;
+        }
+
+        .content-card h2 {
+            margin-bottom: 18px;
+            font-size: 1.5rem;
+        }
+
+        .content-card h3 {
+            color: #c15cff;
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+
+        .content-card p {
+            color: #c9d1d9;
+        }
+
+        /* TECHNOLOGIES */
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tech {
+            background: #1b222c;
+            border: 1px solid #343d48;
+            color: #c971ff;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* ARTIFACT FILES */
+
+        .artifact-files {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .file-group {
+            background: #090d14;
+            border: 1px solid #343d48;
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        .file-group h3 {
+            color: #c15cff;
+            margin-bottom: 18px;
+        }
+
+        .file-group .file-button {
+            display: block;
+            margin-bottom: 10px;
+            word-break: break-word;
+        }
+
+        .file-button {
+            display: inline-block;
+            padding: 11px 17px;
+            color: #ffffff;
+            text-decoration: none;
+            background: #1b222c;
+            border: 1px solid #7135e8;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .file-button:hover {
+            background: #7135e8;
+            border-color: #b94cff;
+            transform: translateY(-2px);
+            box-shadow: 0 0 15px rgba(177, 70, 255, 0.25);
+        }
+
+        .closing-tag {
+            margin-top: 45px;
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 20px;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            main {
+                padding: 60px 20px;
+            }
+
+            .content-card {
+                padding: 25px;
+            }
+
+            .artifact-files {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            &lt;SB /&gt;
+        </div>
+
+        <a href="../index.html">
+            ← Back to Portfolio
+        </a>
+
+    </nav>
+
+
+    <main>
+
+        <p class="tag">
+            &lt;project-02&gt;
+        </p>
+
+        <h1>
+            Algorithms & Data Structures
+        </h1>
+
+        <p class="subtitle">
+            Watch The Weight Fall Off • Android Application
+        </p>
+
+        <p class="intro">
+            This enhancement focuses on using algorithms and data
+            structures to analyze the user's weight history and turn
+            stored data into useful information about trends and
+            progress toward a goal.
+        </p>
+
+
+        <div class="content-card">
+
+            <h2>Project Overview</h2>
+
+            <p>
+                Watch The Weight Fall Off allows users to record and
+                track their weight over time. For this CS 499 enhancement,
+                I expanded the application beyond simply storing and
+                displaying weight entries by adding algorithms that
+                analyze the user's weight history.
+            </p>
+
+        </div>
+
+
+        <div class="content-card">
+
+            <h2>Enhancement Highlights</h2>
+
+            <p>
+                I added sorting functionality to organize weight entries
+                by date before performing calculations. I also implemented
+                trend analysis that calculates the user's average weekly
+                weight change. The application can use the weekly change,
+                current weight, and goal weight to estimate approximately
+                how many weeks it may take the user to reach their goal.
+            </p>
+
+        </div>
+
+
+        <div class="content-card">
+
+            <h2>Technologies & Concepts</h2>
+
+            <div class="tech-list">
+
+                <span class="tech">Java</span>
+                <span class="tech">Android Studio</span>
+                <span class="tech">ArrayList</span>
+                <span class="tech">Collections</span>
+                <span class="tech">Comparator</span>
+                <span class="tech">Sorting</span>
+                <span class="tech">Trend Analysis</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-card">
+
+            <h2>Explore the Artifact</h2>
+
+            <p>
+                Compare the original and enhanced source files to see
+                how sorting, trend analysis, and goal estimation were
+                incorporated into the application.
+            </p>
+
+            <div class="artifact-files">
+
+                <div class="file-group">
+
+                    <h3>Original Files</h3>
+
+                    <a href="original/activity_logged_weights(Original).xml"
+                       class="file-button">
+                        activity_logged_weights.xml
+                    </a>
+
+                    <a href="original/LoggedWeightsActivity(Original).java"
+                       class="file-button">
+                        LoggedWeightsActivity.java
+                    </a>
+
+                    <a href="original/row_weight(Original).xml"
+                       class="file-button">
+                        row_weight.xml
+                    </a>
+
+                    <a href="original/WeightDao(Original).java"
+                       class="file-button">
+                        WeightDao.java
+                    </a>
+
+                    <a href="original/WeightEntry(Original).java"
+                       class="file-button">
+                        WeightEntry.java
+                    </a>
+
+                </div>
+
+
+                <div class="file-group">
+
+                    <h3>Enhanced Files</h3>
+
+                    <a href="enhanced/activity_logged_weights.xml"
+                       class="file-button">
+                        activity_logged_weights.xml
+                    </a>
+
+                    <a href="enhanced/LoggedWeightsActivity.java"
+                       class="file-button">
+                        LoggedWeightsActivity.java
+                    </a>
+
+                    <a href="enhanced/row_weight.xml"
+                       class="file-button">
+                        row_weight.xml
+                    </a>
+
+                    <a href="enhanced/WeightDao.java"
+                       class="file-button">
+                        WeightDao.java
+                    </a>
+
+                    <a href="enhanced/WeightEntry.java"
+                       class="file-button">
+                        WeightEntry.java
+                    </a>
+
+                    <a href="enhanced/WeightProgressCalculator.java"
+                       class="file-button">
+                        WeightProgressCalculator.java
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <p class="tag closing-tag">
+            &lt;/project-02&gt;
+        </p>
+
+    </main>
+
+</body>
+
+</html>
