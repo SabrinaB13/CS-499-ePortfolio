@@ -379,6 +379,106 @@
 
         </div>
 
+        <div class="content-card" id="narrative">
+
+    <h2>Milestone 3 Narrative</h2>
+
+    <p>
+        The artifact that I selected is my Watch The Weight Fall Off Android
+        application. I originally created this application in my CS 360:
+        Mobile Architecture and Programming course. The application allows
+        users to enter and track their weight, set a goal weight, and then
+        view their progress as they go. I chose to enhance this specific
+        project because I felt that there were several ways I could make the
+        weight data more useful to the user. For this milestone, I focused
+        specifically on improving how the application analyzes the user's
+        weight history.
+    </p>
+
+    <p>
+        Another reason I selected this artifact for my ePortfolio is because
+        I feel it shows how much I have improved since originally creating
+        the application in my previous course. Instead of only storing and
+        displaying weight entries, I enhanced the application so it can also
+        analyze the user's weight history and provide useful information
+        from it for the user.
+    </p>
+
+    <p>
+        For the algorithms and data structures enhancement, I used a
+        List&lt;WeightEntry&gt; to work with the user's weight records, and
+        I also created an ArrayList that contains the valid weights used for
+        the calculations. The application can now sort the entries by date
+        and uses the oldest and newest weights to calculate the user's
+        average weekly weight change. I then added another calculation that
+        uses the user's weight progress to estimate how many weeks it could
+        potentially take to reach their goal weight.
+    </p>
+
+    <p>
+        I also improved the application by automatically using the current
+        date instead of requiring the user to manually enter it. This also
+        prevents more than one daily weight from being entered on the same
+        date. These changes help make the data more consistent and help the
+        trend calculations work correctly. I feel this enhancement
+        demonstrates my ability to use data structures and algorithms to
+        take stored data and turn it into information and create an
+        application that is more useful to the user.
+    </p>
+
+    <p>
+        Looking back, I do feel that I met the main course outcome I planned
+        for this enhancement. That main course outcome was to design and
+        evaluate computing solutions using algorithmic principles and
+        computer science practices. I accomplished this by creating
+        algorithms that organize and analyze the user's weight data,
+        calculate the average weekly change, and estimate the amount of time
+        needed to reach a goal.
+    </p>
+
+    <p>
+        I also feel that I made progress toward the outcome involving the use
+        of appropriate computing techniques, skills, and tools to create
+        solutions that provide value to the user. The application no longer
+        just displays the weight information that was entered because it now
+        uses that same information to provide more detailed feedback about
+        the user's progress. I do not feel that I need to make major changes
+        to my original outcome coverage plan because this enhancement
+        accomplished what I originally planned while also improving the
+        usability of the application.
+    </p>
+
+    <p>
+        I would say that one of the biggest things I learned from this
+        enhancement was that creating an algorithm involves more than
+        getting a calculation to work. I also had to think more in depth
+        about the quality of the data being used and what could potentially
+        cause the results to be incorrect.
+    </p>
+
+    <p>
+        One challenge I did run into was that setting a goal weight could
+        also create an entry with a weight of 0.0. This was throwing off the
+        calculation because the trend algorithm included that value and
+        calculated an extremely large amount of weight loss. I fixed this by
+        filtering the list so that only actual weight entries greater than
+        zero are included in the trend calculation. After testing again, the
+        algorithm was working correctly.
+    </p>
+
+    <p>
+        I also learned and saw firsthand again the importance of testing as
+        I worked. I tested each change before moving on to the next one while
+        also confirming that there were no errors showing. By doing this, it
+        really helped me find problems without having to search through a
+        large amount of new code at once. Overall, I really feel that this
+        enhancement helped me to better understand how data structures,
+        algorithms, testing, and user input all work together when
+        developing an application.
+    </p>
+
+</div>
+
 
         <p class="tag closing-tag">
             &lt;/project-02&gt;
