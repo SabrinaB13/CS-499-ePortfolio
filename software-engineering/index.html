@@ -26,6 +26,10 @@
             line-height: 1.7;
         }
 
+        #narrative p {
+            margin-bottom: 20px;
+        }
+
         /* NAVIGATION */
 
         nav {
@@ -86,6 +90,16 @@
             max-width: 800px;
             font-size: 1.05rem;
             margin-bottom: 55px;
+        }
+
+        .content-card h3 {
+            color: #c15cff;
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+
+        .content-card h3:first-of-type {
+            margin-top: 10px;
         }
 
         /* CONTENT CARDS */
@@ -365,6 +379,85 @@
 </div>
 
         </div>
+
+    <div class="content-card" id="narrative">
+
+    <h2>Milestone 2 Narrative</h2>
+
+    <p>
+        The artifact I selected for my Software Design enhancement is my
+        Watch The Weight Fall Off application that I originally created in
+        my previous course CS 360. Watch The Weight Fall Off is an Android
+        application that allows users to create an account, log their daily
+        weight, set a goal weight, and track their weight over time while
+        reaching their set goal weight. I chose to continue working on this
+        application for my Capstone because I felt that it gave me a good
+        opportunity to show how my software development skills have improved
+        throughout the entirety of the Computer Science program.
+    </p>
+
+    <p>
+        Another reason that I selected this artifact for my ePortfolio is
+        because I feel that it shows several of my software development skills.
+        These skills include Java programming, Android development, working
+        with a database, and designing a user interface. For this specific
+        enhancement, the goal I had was to make it easier for users to visually
+        see their progress instead of only looking at numbers in their weight
+        history. To do that, I added a circular progress ring that shows the
+        percentage of the user's goal that has been completed. The percentage
+        is displayed in the center of the ring, and the pounds remaining are
+        displayed underneath it.
+    </p>
+
+    <p>
+        I made sure to create a new separate WeightProgressCalculator class
+        to handle the calculations instead of putting all of the logic inside
+        my LoggedWeightsActivity file. I feel that this improved the
+        organization of my code by separating the calculation logic from the
+        user interface. I also took advantage of the enhancement process to
+        remove unnecessary duplicate code.
+    </p>
+
+    <p>
+        I feel that this enhancement helped me make progress toward the course
+        outcomes that I had planned to address in Module One. One of the main
+        outcomes I had this module was using software engineering techniques
+        and tools to create a solution that provides value to the user. The new
+        circular progress feature does this by taking stored weight information
+        and turning it into an easier visual representation.
+    </p>
+
+    <p>
+        I also made progress toward designing and evaluating computing
+        solutions. I had to decide how the progress should be calculated and
+        how the different parts of the application should work together.
+        I separated the progress calculations into their own class, and I feel
+        that also helped me improve the overall design and functionality of
+        the application.
+    </p>
+
+    <p>
+        Overall, enhancing this artifact really helped me to understand how
+        even just a smaller feature can involve several parts of software
+        development. For the enhancement, I had to think about the existing
+        database information, the calculation logic, and how the results would
+        be displayed to the user. I learned more about separating different
+        responsibilities in my code instead of putting everything into just
+        one activity.
+    </p>
+
+    <p>
+        One challenge I faced was figuring out how to create the circular
+        progress ring and connect it to the user's existing weight information.
+        I ended up having to create a new drawable resource and connect the new
+        UI elements to the Java code. I also tested the feature as I made
+        changes so I could catch problems along the way. For example, I ran
+        into a resource linking error when the circular progress drawable was
+        missing. I was able to fix the issue and continue testing until the
+        progress percentage and pounds remaining displayed correctly.
+    </p>
+
+</div>
 
 
         <p class="tag closing-tag">
